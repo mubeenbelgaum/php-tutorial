@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: "Lato", sans-serif;}
+
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 5px solid #ccc;
+    background-color: #ccc;
+    width: 25%;
+    height: 900px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+
+    color: black;
+    padding: 18px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #9be15d;
+}
+
+/* Create an active/current "tab button" class */
+
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 2px 2px;
+    width: 60%;
+    border-left: none;
+    height: 900px;
+}
+</style>
+</head>
+<body>
+<div style="text-align:center">
+  <img src="w3schools.jpg">
+</div>
+<br>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Syntax')" id="defaultOpen">PHP Syntax</button>
+  <button class="tablinks" onclick="openCity(event, 'Variables')">PHP Variables</button>
+  <button class="tablinks" onclick="openCity(event, 'Echo')">PHP Echo/Print</button>
+  <button class="tablinks" onclick="openCity(event, 'Datatypes')">PHP Data Types</button>
+  <button class="tablinks" onclick="openCity(event, 'Strings')">PHP Strings</button>
+  <button class="tablinks" onclick="openCity(event, 'Constants')">PHP Constants</button>
+  <button class="tablinks" onclick="openCity(event, 'Operators')">PHP Operators</button>
+  <button class="tablinks" onclick="openCity(event, 'If')">PHP If...Else...ElseIf</button>
+  <button class="tablinks" onclick="openCity(event, 'Switch')">PHP Switch</button>
+  <button class="tablinks" onclick="openCity(event, 'WhileLoops')">PHP While Loops</button>
+  <button class="tablinks" onclick="openCity(event, 'ForLoops')">PHP For Loops</button>
+  <button class="tablinks" onclick="openCity(event, 'Functions')">PHP Functions</button>
+  <button class="tablinks" onclick="openCity(event, 'Arrays')">PHP Arrays</button>
+  <button class="tablinks" onclick="openCity(event, 'Sorting')">PHP Sorting Arrays</button>
+<button class="tablinks" onclick="openCity(event, 'Super')">PHP Superglobals</button>
+</div>
+
+<div id="Syntax" class="tabcontent">
+  <div style="margin-right:800px"><button type="button" class="btn btn-default">Previous</button></div>
+  <div style="margin-left:800px"><button type="button" class="btn btn-success">Next</button></div>
+    <h1>Basic PHP Syntax</h1>
+    <h4>A PHP script can be placed anywhere in the document.</h4>
+    <p>The default file extension for PHP files is ".php".</p>
+    <p>A PHP file normally contains HTML tags, and some PHP scripting code.</p>
+    <p>Below, we have an example of a simple PHP file, with a PHP script that uses a built-in PHP function "echo"
+      to output the text "Hello World!" on a web page:</p>
+<img src="syntax.png">
+</div>
+
+
+
+<div id="Variables" class="tabcontent">
+  <div style="margin-right:800px"><button type="button" class="btn btn-default">Previous</button></div>
+  <div style="margin-left:800px"><button type="button" class="btn btn-success">Next</button></div>
+  <h1>PHP 5 Variables</h1>
+  <p>Variables are "containers" for storing
+    information.</p>
+  <h2>Creating (Declaring) PHP Variables</h2>
+  <p>In PHP, a variable starts with the $ sign, followed by the name of the variable:</p>
+<img src="example_php.png">
+</div>
+
+
+
+<div id="Echo" class="tabcontent">
+  <div style="margin-right:800px"><button type="button" class="btn btn-default">Previous</button></div>
+  <div style="margin-left:800px"><button type="button" class="btn btn-success">Next</button></div>
+  <h1>PHP 5 Echo/PRINT</h1>
+<H2>  The PHP echo Statement</H2>
+<P>The echo
+   statement can be used with
+or without parentheses: echo or echo().</P>
+<h3>Display Text</h3>
+<p>The following example shows how to output text with the echo command
+(notice that the text can contain HTML markup):</p>
+<img src="php_echo.png">
+</div>
+
+
+<div id="Datatypes" class="tabcontent">
+  <div style="margin-right:800px"><button type="button" class="btn btn-default">Previous</button></div>
+  <div style="margin-left:800px"><button type="button" class="btn btn-success">Next</button></div>
+ <h1>PHP 5 Data Types</h1>
+ <h3>PHP Data Types</h3>
+ <p>Variables can store data of different types,
+    and different data types can do different
+     things.</p>
+<ul>
+ <p>PHP supports the following
+   data types:</p>
+  <li>   String</li>
+  <li>   Integer</li>
+  <li>   Float (floating point numbers - also
+     called double)</li>
+    <li> Boolean</li>
+  <li>   Array</li>
+    <li> Object</li>
+    <li> NULL</li>
+    <li> Resource</li>
+    </ul>
+  <h2> PHP String</h2>
+  <p>  A string is a sequence of characters,
+     like "Hello world!".</p>
+  <p>  A string can be any text inside quotes.
+     You can use single or double quotes:</p>
+     <img src="datatypes.png">
+</div>
+
+
+<div id="Strings" class="tabcontent">
+  <div style="margin-right:800px"><button type="button" class="btn btn-default">Previous</button></div>
+  <div style="margin-left:800px"><button type="button" class="btn btn-success">Next</button></div>
+  <h1>PHP 5 Strings</h1>
+<H2>  The PHP echo Statement</H2>
+<p>A string is a sequence of characters,
+like "Hello world!".</p>
+<h3>PHP String Functions</h3>
+<p>In this chapter we will look at some commonly used
+ functions to manipulate strings.</p><br>
+<h3>Get The Length of a String</h3>
+<p>The PHP strlen() function returns the
+   length of a string.</p>
+<h4>The example below returns the length
+  of the string "Hello world!":</h4>
+<img src="strlen.png">
+</div>
+
+
+
+<div id="Constants" class="tabcontent">
+  <div style="margin-right:800px"><button type="button" class="btn btn-default">Previous</button></div>
+  <div style="margin-left:800px"><button type="button" class="btn btn-success">Next</button></div>
+
+  <h1>PHP Constants</h1>
+
+  <h3>Create a PHP Constant</h3>
+
+  <p>To create a constant,
+    use the define() function.</p>
+  <b>Syntax</b>
+  <i>define(name, value, case-insensitive)</i>
+  <b>Parameters:</b>
+    <p>  name: Specifies the name of the constant</p><br>
+    <p>  value: Specifies the value of the constant</p><br>
+  <p>    case-insensitive: Specifies </p><br>
+  <p>    whether the constant name should be case-insensitive. </p><br>
+    <p>  Default is false
+  <p>The example below creates a constant with a case-sensitive name:</p><br>
+</div>
+
+
+<div id="Operators" class="tabcontent">
+  <div style="margin-right:800px"><button type="button" class="btn btn-default">Previous</button></div>
+  <div style="margin-left:800px"><button type="button" class="btn btn-success">Next</button></div>
+  <h1>PHP Operators</h1>
+  <p>Operators are used to perform operations on variables and values.</p>
+<ul>
+<p>PHP divides the operators in the following groups:</p>
+  <li>  Arithmetic operators</li>
+  <li>   Assignment operators</li>
+  <li>  Comparison operators</li>
+  <li>   Increment/Decrement operators</li>
+  <li>   Logical operators</li>
+  <li>   String operators</li>
+  <li>   Array operators</li>
+</div>
+
+
+<div id="If" class="tabcontent">
+  <div style="margin-right:800px"><button type="button" class="btn btn-default">Previous</button></div>
+  <div style="margin-left:800px"><button type="button" class="btn btn-success">Next</button></div>
+  <h1>PHP If...Else...ElseIf</h1>
+  <h3>PHP Conditional Statements</h3>
+  <p>Very often when you write code, you want to perform different actions
+   for different conditions. You can use conditional statements in your code to do this.</p><br>
+   <h4>In PHP we have the following conditional statements:</h4>
+   <p>if statement - executes some code if one condition is true</p><br>
+    <p>if...else statement - executes some code if a condition is true and another code
+      if that condition is false</p>
+    <p>if...elseif....else statement - executes different codes for more than two conditions
+    switch statement - selects one of many blocks of code to be executed</p><br>
+  </div>
+
+  <div id="Switch" class="tabcontent">
+    <div style="margin-right:800px"><button type="button" class="btn btn-default">Previous</button></div>
+    <div style="margin-left:800px"><button type="button" class="btn btn-success">Next</button></div>
+  <h1>  The PHP switch Statement</h1>
+  <p>  Use the switch statement to select one of many blocks of code to be executed.</p><br>
+    <b>Syntax</b><br>
+    <p>switch (n) {</p><br>
+        <p>  case label1:</p><br>
+            <p>code to be executed if n=label1;</p><br>
+            break;</p><br>
+      <p>  case label2:</p><br>
+          <p>  code to be executed if n=label2;</p><br>
+            <b>break;</p><br>
+      <p>  case label3:</p><br>
+          <p>  code to be executed if n=label3;</p><br>
+            <p>break;</p><br>
+        ...
+      <p>  default:
+            code to be executed if n is different from all labels;</p><br>
+    }
+    <img src="switch.png">
+</div>
+
+
+<div id="WhileLoops" class="tabcontent">
+  <div style="margin-right:800px"><button type="button" class="btn btn-default">Previous</button></div>
+  <div style="margin-left:800px"><button type="button" class="btn btn-success">Next</button></div>
+<h1>  The PHP while Loop </h1>
+<p>The while loop executes a block of code as long as the specified condition is true.</p>
+<b>Syntax</b>
+<p>while (condition is true) {
+    code to be executed;
+}</p><br>
+
+<p>The example below first sets a variable $x to 1 ($x = 1). Then, the while loop will continue to run as long as $x is
+ less than, or equal to 5 ($x <= 5). $x will increase by 1 each time the loop runs ($x++):</p><br>
+<img src="while.png">
+</div>
+
+<div id="ForLoops" class="tabcontent">
+  <div style="margin-right:800px"><button type="button" class="btn btn-default">Previous</button></div>
+  <div style="margin-left:800px"><button type="button" class="btn btn-success">Next</button></div>
+<h1>  The PHP For Loop </h1>
+
+<p>The for loop is used when you know in advance how many times the script should run.</p><br>
+<b>Syntax</b><br>
+<p>for (init counter; test counter; increment counter) {
+    code to be executed;
+}</p>
+<img src="for.png">
+</div>
+
+
+<div id="Functions" class="tabcontent">
+  <div style="margin-right:800px"><button type="button" class="btn btn-default">Previous</button></div>
+  <div style="margin-left:800px"><button type="button" class="btn btn-success">Next</button></div>
+<h1> PHP Functions </h1>
+<h3>Create a User Defined Function in PHP</h3>
+
+<p>A user defined function declaration starts with the word "function":</p><br>
+<b>Syntax</b><br>
+<p>function functionName() {
+    code to be executed;
+} </p>
+<img src="function.png">
+</div>
+
+
+<div id="Arrays" class="tabcontent">
+  <div style="margin-right:800px"><button type="button" class="btn btn-default">Previous</button></div>
+  <div style="margin-left:800px"><button type="button" class="btn btn-success">Next</button></div>
+    <h1> PHP 5 Arrays</h1>
+    <p>An array stores multiple values in one single variable:</p><br>
+    <img src="arrays.png">
+  </div>
+
+
+  <div id="Sorting" class="tabcontent">
+    <div style="margin-right:800px"><button type="button" class="btn btn-default">Previous</button></div>
+    <div style="margin-left:800px"><button type="button" class="btn btn-success">Next</button></div>
+      <h1> PHP 5 Sorting Arrays</h1>
+      <p>The elements in an array can be sorted in alphabetical or numerical order, descending or ascending.
+      PHP - Sort Functions For Arrays</p><br>
+<ul>
+      <p>In this chapter, we will go through the following PHP array sort functions:</p>
+
+        <li>  sort() - sort arrays in ascending order</li><br>
+        <li>  rsort() - sort arrays in descending order</li><br>
+        <li>  asort() - sort associative arrays in ascending order, according to the value</li><br>
+        <li>  ksort() - sort associative arrays in ascending order, according to the key</li><br>
+        <li>  arsort() - sort associative arrays in descending order, according to the value</li><br>
+          <li>krsort() - sort associative arrays in descending order, according to the key</li><br>
+</ul>
+
+<b>Sort Array in Ascending Order - sort()</b><br>
+
+<p>The following example sorts the elements of the $cars array in ascending alphabetical order:</p>
+<img src="sorting.png">
+</div>
+
+
+<div id="Super" class="tabcontent">
+  <div style="margin-right:800px"><button type="button" class="btn btn-default">Previous</button></div>
+  <div style="margin-left:800px"><button type="button" class="btn btn-success">Next</button></div>
+<h1>PHP 5 Global Variables - Superglobals</h1>
+<p>Superglobals were
+ introduced in PHP 4.1.0, and are built-in variables that are always available in all scopes.
+PHP Global Variables - Superglobals</p><br>
+
+<p>Several predefined variables in PHP are "superglobals",
+which means that they are always accessible, regardless of scope -
+and you can access them from any function, class or file without having to
+ do anything special.</p><br>
+<ul>
+<p>The PHP superglobal variables are:</p>
+
+  <li>  $GLOBALS</li><br>
+    <li>  $_SERVER</li><br>
+    <li>  $_REQUEST</li><br>
+    <li>  $_POST</li><br>
+    <li>  $_GET</li><br>
+    <li>  $_FILES</li><br>
+    <li>  $_ENV</li><br>
+    <li>  $_COOKIE</li><br>
+    <li>  $_SESSION</li><br>
+
+<p>This chapter will explain some of the superglobals,
+   and the rest will be explained in later chapters.</p><br>
+   <img src="superglobals.png">
+ </div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>
